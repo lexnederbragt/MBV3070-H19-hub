@@ -49,9 +49,9 @@ if __name__ == "__main__":
     # fasta header stored
     header = fastalines[0]
     # And we use the read_fasta function to
-    # convert the contents of the file into
-    # one long string
-    sequence = read_fasta(fastalines)
+    # convert the remaining contents 
+    # of the file into one long string
+    sequence = read_fasta(fastalines[1:])
 
     # Part 2: Here we read in a translation table,
     # and make a dictionary out of it.
